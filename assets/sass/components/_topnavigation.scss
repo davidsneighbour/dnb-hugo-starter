@@ -1,0 +1,35 @@
+#topnavigation {
+    @extend .px-0;
+    position: sticky;
+    top: 0;
+    z-index: $zindex-sticky;
+    nav {
+        border-top-left-radius: $border-radius-lg;
+        border-top-right-radius: $border-radius-lg;
+    }
+    &.navbar-fixed-top nav {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+
+    ul#menu-topnavigation {
+        li:first-child a {
+            padding-left:0;
+        } 
+    }
+
+}
+
+.progress {
+    .progress-bar {
+        background: linear-gradient(
+            90deg, 
+            rgba(208,75,54,1) 0%, 
+            rgba(227,101,17,1) 20%, 
+            rgba(255,186,0,1) 40%, 
+            rgba(0,177,128,1) 60%, 
+            rgba(20,122,171,1) 80%, 
+            rgba(103,89,151,1) 100%
+        );
+    }
+}

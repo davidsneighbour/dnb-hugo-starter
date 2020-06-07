@@ -1,0 +1,25 @@
+{{/*
+
+https://gohugohq.com/partials/twitter-cards-partials-for-hugo/
+
+*/}}
+
+{{ with .Params.twitter }}
+<meta name="twitter:card" content="{{- .card -}}">
+<meta name="twitter:site" content="{{- .site -}}">
+{{ if ne .card "app" -}}
+<meta name="twitter:title" content="{{- .title -}}">
+<meta name="twitter:image" content="{{- .image -}}">
+{{ with .image_alt -}}<meta name="twitter:image:alt" content="{{- . -}}">{{- end }}
+{{- end }}
+{{ with .creator -}}<meta name="twitter:creator" content="{{- . -}}">{{- end }}
+
+{{- if eq .card "player" }}
+{{ with .player }}<meta name="twitter:player" content="{{- . -}}">{{ end }}
+{{ with .player_width }}<meta name="twitter:player:width" content="{{- . -}}">{{ end }}
+{{ with .player_height }}<meta name="twitter:player:height" content="{{- . -}}">{{ end }}
+{{ with .player_stream }}<meta name="twitter:player:stream" content="{{- . -}}">{{ end }}
+{{ with .player_stream_content_type }}<meta name="twitter:player:stream:content_type" content="{{- . -}}">{{ end }}
+{{- end }}
+
+{{ end }}

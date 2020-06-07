@@ -1,0 +1,15 @@
+caption {
+	padding-top:0; /** @todo see if this is done via settings */
+}
+
+table.debugprint {
+    @extend .table-dark;
+    @extend .table-bordered;
+    @extend .table-sm;
+    @extend .mb-3;
+    @extend .w-100;
+    .key {
+        min-width:100px;
+        width:20%;
+    }
+}

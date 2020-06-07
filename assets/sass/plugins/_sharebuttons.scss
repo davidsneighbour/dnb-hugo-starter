@@ -1,0 +1,19 @@
+.social-media-buttons {
+
+  .btn-facebook {
+    @include button-variant(#3b5998, #3b5998);
+  }
+
+  .btn-google {
+    @include button-variant(#ea4335, #ea4335);
+  }
+
+  .btn-linkedin {
+    @include button-variant(#0077b5, #0077b5);
+  }
+
+  .btn-twitter {
+    @include button-variant(#1da1f2, #1da1f2);
+  }
+
+}

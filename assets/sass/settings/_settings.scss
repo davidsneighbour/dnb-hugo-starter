@@ -1,0 +1,82 @@
+// add this to theme color functions
+// https://getbootstrap.com/docs/4.0/getting-started/theming/#functions
+$primary: theme-color("primary");
+$enable-caret: true;
+$enable-rounded: false;
+$enable-shadows: false;
+$enable-gradients: false;
+$enable-transitions: true;
+$enable-grid-classes: true;
+$enable-print-styles: true;
+$enable-prefers-reduced-motion-media-query:   true;
+$enable-print-styles:                         true;
+$enable-validation-icons:                     true;
+
+$body-bg: theme-color("bodybg");
+$body-color: theme-color("text");
+$grid-gutter-width: 30px;
+
+// fonts
+$font-family-sans-serif: Panton, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$headings-font-family: Panton, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$dark: theme-color("text");
+$font-size-base: 1rem;
+$blockquote-font-size: $font-size-base;
+$link-color: darken($primary, 20%);
+$link-hover-color: darken($link-color, 10%);
+$font-weight-lighter:         200;
+$font-weight-light:           300;
+$font-weight-normal:          400;
+$font-weight-bold:            700;
+$font-weight-bolder:          800;
+$headings-font-weight:        800;
+
+// tables
+$table-border-color: theme-color("bodybg");
+
+// cards
+$card-cap-bg:                       rgba($primary, .3);
+$card-bg:                           darken(theme-color("contentbg"), 3%);
+
+// carousel
+$carousel-control-width:            15%;
+$carousel-control-opacity:          .5;
+$carousel-indicator-width:          20px;
+$carousel-indicator-height:         9px;
+$carousel-indicator-spacer:         3px;
+$carousel-indicator-active-bg:      theme-color("primary");
+$carousel-caption-width:            70%;
+$carousel-caption-color:            theme-color("primary");
+$carousel-control-icon-width:       20px;
+
+// pagination
+$pagination-color: lighten(theme-color("contentbg"), 20%);
+$pagination-bg: theme-color("primary");
+$pagination-border-color: rgba(theme-color("text"), 0.2);
+$pagination-hover-color: theme-color("primary");
+$pagination-hover-bg: lighten(theme-color("contentbg"), 20%);
+$pagination-hover-border-color: rgba(theme-color("text"), 0.2);
+$pagination-active-color: lighten(theme-color("contentbg"), 20%);
+$pagination-active-bg: theme-color("primary");
+$pagination-active-border-color: rgba(theme-color("text"), 0.2);
+$pagination-disabled-bg: theme-color("primary");
+$pagination-disabled-border-color: rgba(theme-color("text"), 0.2);
+$pagination-disabled-color: lighten(theme-color("contentbg"), 40%);
+
+// progress bars
+$progress-bg: theme-color("contentbg");
+$progress-bar-color: theme-color("text");
+$progress-bar-bg: theme-color("primary");
+$progress-height: 5px;
+
+// list groups
+$list-group-bg: transparent;
+
+// brandcolors
+$brandcolors: (
+    "facebook":  #3b5998,
+    "messenger": #0084ff,
+    "twitter":   #1da1f2,
+    "whatsapp":  #25d366,
+    "snapchat":  #fffc00
+);

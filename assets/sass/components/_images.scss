@@ -1,0 +1,11 @@
+.entry-content {
+    figure {
+	    img {
+    		@extend .img-fluid;
+	    }
+		figcaption {
+			font-family: Panton;
+            font-style: italic;
+		}
+	}
+}

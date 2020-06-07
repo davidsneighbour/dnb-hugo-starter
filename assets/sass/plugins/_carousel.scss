@@ -1,0 +1,19 @@
+
+article .entry-content .carousel img {
+    height: 100%
+}
+
+article .entry-content .carousel .carousel-caption {
+    background-color: hsla(60,43%,80%,.5);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: .3rem
+}
+
+article .entry-content .carousel .carousel-indicators li {
+    background-color: #ec7263
+}
+
+article .entry-content .carousel .carousel-indicators li .active {
+    background-color: #290e1c!important
+}

@@ -1,0 +1,67 @@
+footer#authorinfo  .container, 
+footer#debugging .container, 
+footer#copyright .container, 
+footer#tagcloud .container,
+footer#peoplecloud .container {
+
+    padding-top: $spacer;
+    background-color: theme-color("text");
+    color: #bababa;
+
+    #authorfooter {
+
+        img {
+            float:left;
+            margin-right: $spacer;
+            margin-bottom: $spacer;
+        }
+
+        a {
+            text-decoration: none;
+            color:theme-color("contentbg");
+            &:hover {
+                color: darken(theme-color("contentbg"), 20%);
+            }
+        }
+
+    }
+    
+}
+
+footer.taxonomycloud {
+    line-height: 1rem;
+    a:hover {
+    text-decoration:none;
+    }
+}
+
+footer#finisher .container {
+
+    background: url(/assets/images/garuda.png) 50% bottom no-repeat theme-color("text");
+
+    @media (max-width: 575px) {
+        background-size:300%;
+    }
+
+    @media (min-width: 576px) and (max-width:767px) {
+        background-size:250%;
+    }
+
+    @media (min-width: 768px) and (max-width:991px) {
+        background-size:200%;
+    }
+
+    @media (min-width: 992px) and (max-width:992px) {
+        background-size:140%;
+    }
+
+    @media (min-width: 993px) {
+        background-size:140%;
+    }
+
+    & #garuda {
+        min-height: 350px;
+        margin-top: 200px
+    }
+
+}

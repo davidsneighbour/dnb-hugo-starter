@@ -1,0 +1,7 @@
+a {
+    -webkit-transition: color .8s ease;
+    transition: color .8s ease;
+    &:hover {
+        text-decoration:none;
+    }
+}

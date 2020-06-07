@@ -1,0 +1,45 @@
+{{/*
+
+    schema for articles
+
+    - see https://technicalseo.com/tools/schema-markup-generator/
+    - see https://schema.org/Article
+    - see https://schema.org/NewsArticle
+    - see https://schema.org/BlogPosting
+    - see https://developers.google.com/search/docs/data-types/article
+
+*/}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://samui-samui.de/bla/"
+  },
+  "headline": "title line",
+  "description": "short description",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://image-url.com",
+    "width": 696,
+    "height": 300
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Patrick Kollitsch"
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Samui? Samui!",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://logo",
+      "width": 600,
+      "height": 60
+    }
+  },
+  "datePublished": "2019-08-01",
+  "dateModified": "2019-08-02"
+}
+</script>

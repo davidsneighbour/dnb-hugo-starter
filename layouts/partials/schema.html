@@ -1,0 +1,55 @@
+<!-- set height/width to 0px so this schema.org info div doesn't screw up formatting -->
+<div style="height: 0px; width: 0px;">
+<!-- Add this code to article page: -->
+<div itemscope itemtype='http://schema.org/Article'>
+    <meta itemprop='inLanguage' content='{{ .Site.LanguageCode }}'/>
+    <meta itemprop='about' content='{{ .Description }}' />
+    <meta itemprop='isFamilyFriendly' content='False'/>
+    <h1 itemprop='name headline'>{{ .Title }}</h1>
+
+    <!-- Article image start: -->
+    <div itemprop='associatedMedia'>
+        <span itemscope itemtype='http://schema.org/ImageObject'>
+            <img itemprop='contentURL' src='{{ .Params.og_image }}'/>
+            <div>
+            Credit: <span itemscope itemprop='author' itemtype='http://schema.org/Person'>
+            <span itemprop='name'>{{ .Site.Params.twitterName}}</span>
+        </span> /
+                <span itemprop='sourceOrganization'>
+                    <span itemscope itemtype='http://schema.org/Organization'>
+                        <span itemprop='name'>{{ .Site.Title }}</span>
+                    </span>
+                </span>
+            </div>
+            <div itemprop='caption'>{{ .Site.Title }}</div>
+        </span>
+    </div>
+    <!-- Article image end -->
+
+    <!-- Authorship instructions start: -->
+    Written by:
+    <span itemscope itemprop='author' itemtype='http://schema.org/Person'>
+        <span itemprop='name'>
+            <a itemprop='url' href='{{ .Site.BaseURL }}'>{{ .Site.BaseURL }}</a>
+        </span>
+    </span>
+    <!-- Authorship instructions end -->
+
+    Published by:
+    <span itemscope itemprop='sourceOrganization' itemtype='http://schema.org/Organization'>
+        <span itemprop='name'><a itemprop='url' href='{{ .Site.BaseURL }}'>{{ .Site.Title }}</a></span>
+        <img itemprop='logo' src='{{ .Site.BaseURL }}images/og.image.png' />
+    </span>
+
+    Copyright holder:
+    <span itemscope itemprop='sourceOrganization' itemtype='http://schema.org/Organization'>
+        <span itemprop='name'><a itemprop='url' href='{{ .Site.BaseURL }}'>{{ .Site.Title }}</a></span>
+        <img itemprop='logo' src='{{ .Site.BaseURL }}images/og.image.png' />
+    </span>
+        on
+    <time datetime='{{ .Date }}' itemprop='datePublished'>{{ .Date }}</time>
+    {{ if .IsPage }}
+    <div itemprop='articleBody'> {{ .Summary }} </div>
+    {{ end }}
+</div>
+</div>

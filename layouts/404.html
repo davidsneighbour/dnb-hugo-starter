@@ -1,0 +1,28 @@
+{{ define "main" }}
+    <article>
+        <h1>Seite nicht gefunden!</h1>
+        <p>Die gew&uuml;nschte Seite wurde nicht gefunden. Fakt.</p>
+    </article>
+    <article>
+    	<h2>Suchen</h2>
+    	<div class="row">
+		  <div class="col-md-2">
+		     <div id="hits-per-page-selector"></div>
+		  </div>
+		  <div class="col-md-10">      
+		    <div id="search-box"></div>
+		  </div>
+		</div>
+		<div><small id="stats-container" class="text-right mb-3"></small></div>
+		<div class="pagination-container"></div>
+		<div id="hits" class="mb-5"></div>
+		<div class="pagination-container"></div>
+    </article>
+{{ end }}
+
+{{ define "notes" }}
+
+- add special links
+- add recent posts
+
+{{ end }}

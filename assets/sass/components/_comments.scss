@@ -1,0 +1,33 @@
+#comments {
+    margin-top: 2rem;
+}
+
+#comments h3 {
+    font-family: Panton, sans-serif;
+}
+
+#comments .comment-item h4 {
+    font-size: 19.2px;
+    font-size: 1.2rem;
+}
+
+#comments .comment-item h4 cite {
+    font-style: normal;
+}
+
+#comments .comment-item img.avatar {
+    margin-right: 1rem;
+}
+
+textarea#comment {
+    height: 210px;
+}
+
+#comments #submit {
+    @extend .btn;
+    @extend .btn-primary;
+}
+
+.logged-in-as, .form-submit {
+    padding: 0 1rem;
+}

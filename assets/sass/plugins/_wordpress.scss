@@ -1,0 +1,58 @@
+.align-none, .alignnone, a img.alignnone {
+    margin: 5px 0
+}
+
+.align-center,.aligncenter,a img.aligncenter {
+    display: block;
+    margin: 0 auto;
+    clear: both
+}
+
+.align-right,.alignright,a img.alignright {
+    float: right!important
+}
+
+.align-left,.alignleft,a img.alignleft {
+    float: left!important
+}
+
+.wp-caption {
+    max-width: 96%;
+    padding: 5px 3px 10px
+}
+
+.wp-caption.alignleft,.wp-caption.alignnone {
+    margin: 5px 20px 20px 0
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px
+}
+
+.wp-caption img {
+    border: 0;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto
+}
+
+.wp-caption p.wp-caption-text p {
+    margin: 0
+}
+
+.bypostauthor,.gallery-caption,.sticky {
+    font-size: inherit
+}
+
+.skip-navigation {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0
+}

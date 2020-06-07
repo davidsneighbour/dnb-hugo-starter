@@ -1,0 +1,19 @@
+{{/*
+
+  layout for single items without template in TYPE/single.html
+  page layout
+  
+*/}}
+
+{{ define "main" }}
+  {{ print "<!-- _default/single.html -->" | safeHTML }}
+  <article{{ with .File }} id="x{{ .UniqueID }}"{{ end }}>
+  	<header class="title">
+      <h2 class="entry-title">
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+      </h2>
+      {{ partial "content/meta-top.html" . }}
+  	</header>
+    {{ partial "content/content.html" . }}
+  </article>
+{{ end }}

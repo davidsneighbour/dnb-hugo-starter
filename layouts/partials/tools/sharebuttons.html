@@ -1,0 +1,38 @@
+{{/*
+static sharing buttons for social media
+*/}}
+<div class="mb-3">
+<h3>Verbreitet die Botschaft!</h3>
+<div class="row social-media-buttons mb-3">
+  <div class="col">
+    <a class="btn btn-facebook btn-block"
+       href="https://www.facebook.com/sharer/sharer.php?u={{.Permalink}}&title={{ .Title }}"
+       onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=800');return false;"
+       target="_blank"><span class="icon larger light" aria-hidden="true">
+          {{ partialCached "icons/facebook-f.svg" . }}
+        </span>
+      <span class="sr-only sr-only-focusable">&nbsp;Auf Facebook teilen</span>
+    </a>
+  </div>
+  <div class="col">
+    <a class="btn btn-linkedin btn-block"
+       href="https://www.linkedin.com/shareArticle?mini=true&url={{.Permalink}}"
+       onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=800');return false;"
+       target="_blank"><span class="icon larger light" aria-hidden="true">
+          {{ partialCached "icons/linkedin-in.svg" . }}
+        </span>
+      <span class="sr-only sr-only-focusable">&nbsp;Auf LinkedIn teilen</span>
+    </a>
+  </div>
+  <div class="col">
+    <a class="btn btn-twitter btn-block"
+       href="https://twitter.com/intent/tweet?url={{.Permalink}}&via=samui2&hashtags=samui,thailand"
+       onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=800');return false;"
+       target="_blank"><span class="icon larger light" aria-hidden="true">
+          {{ partialCached "icons/twitter.svg" . }}
+        </span>
+      <span class="sr-only sr-only-focusable">&nbsp;Auf Twitter teilen</span>
+    </a>{{/* text is also a parameter */}}
+  </div>
+</div>
+</div>

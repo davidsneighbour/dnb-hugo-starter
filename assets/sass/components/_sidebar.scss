@@ -1,0 +1,32 @@
+#sidebar {
+    
+    h3 {
+        font-size:1.65em;
+    }
+
+    figure img {
+        border: none;
+        border-radius: 0;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+        align-items: center;
+        text-align:center;
+        line-height:3;
+    }
+
+    #widget-socialmedia {
+        a {
+            @each $name, $color in $brandcolors {
+                &.#{$name} {
+                    color: $color;
+                    &:hover {
+                        color: darken($color, 10%);
+                    }
+                }
+            }
+        }
+    }
+}

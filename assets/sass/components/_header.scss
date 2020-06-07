@@ -1,0 +1,81 @@
+#topheader {
+
+    h1 {
+        text-align: center;
+        background-image: url("/header-201906.jpg");
+        background-position: left;
+        transition: all .8s ease;
+
+        &:hover {
+            /*filter: blur(2px) hue-rotate(90deg) contrast(200%) sepia(60%);*/
+            filter: contrast(300%) sepia(40%);
+            transition: all .8s ease;
+        }
+
+        @include media-breakpoint-up(md){
+            background-position: center;
+        }
+
+        background-size: cover;
+        background-clip:                text;
+        -webkit-background-clip:        text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+        line-height:1;
+
+        font-family: Panton;
+        font-weight: 900;
+
+        a {
+            color: transparent;
+            line-height: 0.85;
+        }
+
+        font-size: 23vw;
+        @include media-breakpoint-only(sm) {
+            font-size: 68px;
+        }
+        @include media-breakpoint-only(md) {
+            font-size: 92px;
+        }
+        @include media-breakpoint-up(lg) {
+            font-size: 125px;
+        }
+        @include media-breakpoint-up(xl) {
+            font-size: 149px;
+        }
+
+        .blogname {
+            display:block;
+        }
+
+        .blogdescription {
+
+            display:block;
+            text-align:center;
+            border-top: 1px solid theme-color("primary");
+            border-bottom: 1px solid theme-color("primary");
+            color: theme-color("contentbg");
+            font-size: 4vw;
+            padding: 4px 0;
+
+            @include media-breakpoint-only(sm) {
+                font-size: 14px;
+                padding: 2px 0;
+            }
+            @include media-breakpoint-only(md) {
+                font-size: 19px;
+                padding: 2px 0;
+            }
+            @include media-breakpoint-up(lg) {
+                font-size: 26px;
+                padding: 5px 0;
+            }
+            @include media-breakpoint-up(xl) {
+                font-size: 33px;
+                padding: 5px 0;
+            }
+
+        }
+    }
+}

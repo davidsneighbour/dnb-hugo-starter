@@ -1,0 +1,30 @@
+{{/*
+
+"script",
+"style",
+"image",
+"media",
+and "document".
+
+Link: <thing_to_load.js>;rel="preload";as="script"
+Link: <thing_to_load.woff2>;rel="preload";as="font";crossorigin
+
+<ifModule mod_headers.c>
+Header set imagetoolbar "no"
+</ifModule>
+
+
+<link rel="preload" href="late_discovered_thing.js" as="script">
+<link rel="preload" href="font.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="style" href="async_style.css" onload="this.rel='stylesheet'">
+{{ $path := printf "assets/js/script-%s.js" $.Site.Params.version }}
+<link rel="preload" as="script" href="{{ $path | absURL | safeURL }}"
+onload="var script = document.createElement('script');
+        script.src = this.href;
+        document.body.appendChild(script);">
+
+*/}}
+
+{{ with partial "footer/js.html" . }}
+<link rel="preload" href="{{ .RelPermalink }}" as="script" crossorigin>
+{{ end }}

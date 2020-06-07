@@ -1,11 +1,30 @@
-<!DOCTYPE html>
-<html>
-    {{- partial "head.html" . -}}
-    <body>
-        {{- partial "header.html" . -}}
-        <div id="content">
-        {{- block "main" . }}{{- end }}
+<!doctype html>
+<html lang="{{ .Site.LanguageCode }}" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{{ block "title" . }}{{- with .Title }}{{ . }} | {{ end }}{{ .Site.Title -}}{{ end }}</title>
+    {{ partial "head" . }}
+    {{ block "schema" . }}{{ end }}
+  </head>
+  <body id="{{ .Site.Params.Siteslug }}">
+    {{ partial "header" . }}
+    <main id="content" class="container pt-3">
+      <div id="contentcolumn" class="row">
+        <div id="maincolumn" class="col-lg-8 col-sm-12 col">
+          {{ block "main" . }}{{ end }}
         </div>
-        {{- partial "footer.html" . -}}
-    </body>
+        {{ block "sidebar" . }}
+          <div id="sidebar" class="col-lg-4 col-sm-12 col">
+            {{ partialCached "sidebar/widget-author.html" . }}
+            {{ partialCached "sidebar/widget-archive.html" . }}
+            {{ partial "sidebar/widget-recent.html" . }}
+            {{ partialCached "sidebar/widget-socialmedia.html" . }}
+          </div>
+        {{ end }}
+      </div>
+    </main>
+    {{ partial "footer" . }}  
+  </body>
 </html>
+

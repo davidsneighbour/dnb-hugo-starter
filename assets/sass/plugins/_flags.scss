@@ -1,0 +1,17 @@
+.flag-en, .flag-de, .flag-th {
+    display: inline-block;
+    width: 24px;
+    height: 16px;
+    vertical-align: middle;
+    margin-top: -4px;
+}
+
+.flag-en {
+      background-image: url(/assets/images/gb.png);
+}
+.flag-de {
+      background-image: url(/assets/images/de.png);
+}
+.flag-th {
+      background-image: url(/assets/images/th.png);
+}

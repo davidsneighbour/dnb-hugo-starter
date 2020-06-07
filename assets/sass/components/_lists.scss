@@ -1,0 +1,27 @@
+::marker {
+    color: #00b7a8;
+}
+
+::marker {
+  content: "Step " counter(list-item) ": ";
+}
+::marker {
+  content: counters(list-item,'.') ':';
+  color: #00b7a8;
+  font-weight: bold;
+}
+::marker {
+  content: counters(list-item,'.');
+}
+body {
+  counter-reset: heading-counter;
+}
+h2 {
+  counter-increment: heading-counter;
+  display: list-item;
+}
+h2::before, h2::marker {
+  content: counter(heading-counter) ": ";
+  color: #00b7a8;
+  font-weight: bold;
+}

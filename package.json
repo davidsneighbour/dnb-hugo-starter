@@ -1,0 +1,50 @@
+{
+  "name": "dnb-hugo-starter",
+  "slug": "dnb-hugo-starter",
+  "url": "https://github.com/davidsneighbour/dnb-hugo-starter",
+  "version": "2019.1.159",
+  "author": "Patrick Kollitsch <patrick@davids-neighbour.com>",
+  "description": "Hugo starter template",
+  "homepage": "https://github.com/davidsneighbour/dnb-hugo-starter",
+  "license": "UNLICENSED",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davidsneighbour/dnb-hugo-starter"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    }
+  },
+  "scripts": {
+    "algolia2": "atomic-algolia",
+    "algolia": "hugo --quiet && atomic-algolia && rm -rf public",
+    "lighthouse": "lighthouse http://localhost:1313 --budget-path=budget.json --view"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 version"
+  ],
+  "dependencies": {
+    "atomic-algolia": "^0.3.17",
+    "autoprefixer": "^9.7.4",
+    "bootstrap": "^4.4.1",
+    "caniuse-lite": "^1.0.30001035",
+    "cookieconsent": "^3.1.1",
+    "cssnano": "^4.1.10",
+    "cz-conventional-changelog": "^3.1.0",
+    "cz-customizable": "^6.2.0",
+    "imagemin-cli": "^5.1.0",
+    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-pngquant": "^8.0.0",
+    "instantsearch.js": "^4.3.1",
+    "jquery": "^3.4.1",
+    "moment": "^2.24.0",
+    "popper.js": "^1.16.1",
+    "postcss-cli": "^7.1.0"
+  },
+  "dev-dependencies": {
+    "minimist": ">=1.2.2"
+  }
+}

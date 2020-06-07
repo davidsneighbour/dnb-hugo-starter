@@ -1,0 +1,35 @@
+.pagination {
+
+    margin-bottom: $spacer*5;
+    
+    li {
+        
+        &.active {
+            font-size: 1.6rem;
+            margin-top: -0.3rem;
+            font-weight: 600;
+        }
+        
+    }
+    
+}
+
+nav.prevnext {
+    
+    @extend .row;
+    margin-bottom: 5rem;
+
+    a {
+        text-decoration: none;
+    }
+
+    .next {
+        @extend .col-sm;
+    }
+    .prev {
+        @extend .col-sm;
+        @extend .text-right;
+        @extend .float-right;
+    }
+    
+}

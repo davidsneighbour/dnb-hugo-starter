@@ -1,0 +1,30 @@
+#back-to-top {
+
+    right: 0px;
+    bottom: $spacer;
+    z-index: $zindex-sticky+1;
+    display: none;
+    position: fixed;
+    padding: 10px 15px;
+    color: lighten(theme-color("contentbg"), 20%);
+    background-color: rgba(theme-color("primary"), 0.7);
+    border-top-left-radius: $border-radius-lg;
+    border-bottom-left-radius: $border-radius-lg;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+
+        background-color:  theme-color("primary");
+        text-decoration: none;
+
+    }
+
+    -webkit-transition: 2s ease-in-out;
+    transition: 2s ease-in-out;
+    -webkit-animation: 2s b;
+    animation: 2s b;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+}

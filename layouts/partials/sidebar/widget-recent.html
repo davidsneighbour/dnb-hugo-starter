@@ -1,0 +1,17 @@
+<aside class="card mb-3" id="widget_recent">
+    <h3 class="card-header">
+        Neueste Eintr&auml;ge
+    </h3>
+    {{ $pages := where .Site.RegularPages ".File.UniqueID" "!=" "nil" }}
+    {{ $currentPage := . }}
+    {{ $recentPages := $pages | complement (slice $currentPage) }}
+    <ul class="list-group list-group-flush">
+        {{ range first 5 $recentPages }}
+            <li class="list-group-item">
+                <a href="{{ .Permalink }}" class="stretched-link">
+                    {{ .Title }}
+                </a>
+            </li>
+        {{ end }}
+    </ul>  
+</aside>

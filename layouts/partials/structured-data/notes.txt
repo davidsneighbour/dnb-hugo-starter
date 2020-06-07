@@ -1,0 +1,4 @@
+notes.txt
+https://search.google.com/structured-data/testing-tool/u/0/#url=https%3A%2F%2Fdavids-neighbour.com
+https://developers.google.com/search/docs/data-types/article
+https://technicalseo.com/tools/schema-markup-generator/

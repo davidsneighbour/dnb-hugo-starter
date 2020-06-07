@@ -1,0 +1,86 @@
+article {
+
+    margin-bottom: $spacer*5;
+
+    h2 {
+
+        margin-bottom: 0;
+        text-transform: uppercase;
+        line-height: 1.2;
+
+        a {
+            text-decoration: none;
+        }
+
+    }
+
+    .meta {
+
+        border-top: 1px solid #282828;
+        border-bottom: 1px solid #282828;
+        color: #282828;
+        padding: 5px 0;
+        line-height: 1;
+        margin-bottom: $spacer;
+
+        a {
+            text-decoration: none;
+        }
+
+        address {
+            display: inline-block;
+            margin-bottom: 0;
+        }
+
+        time {
+            i {
+                margin-left: 0.2rem;
+            }
+        }
+
+    }
+
+    .is--taglist {
+        white-space: nowrap; 
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .entry-content {
+        margin-bottom: $spacer;
+    }
+
+    blockquote.blockquote {
+
+        border-left: 5px solid theme-color("primary");
+        background-color: rgba(theme-color("primary"), 0.05);
+        padding: $spacer;
+        border-radius: $border-radius-lg;
+
+    }
+
+    iframe {
+        border: 0;
+        width: 100%;
+    }
+
+    .is--soundcloud {
+        height:130px;
+        background-color: rgba(theme-color("primary"), 0.05);
+    }
+
+    .embed-responsive {
+    margin-bottom: 1rem;
+    }
+
+    table {
+        @extend .table;
+        @extend .table-bordered;
+        @extend .table-sm;
+
+        thead {
+            @extend .thead-dark;
+        }
+    }
+
+}
