@@ -45,6 +45,7 @@
     "postcss-cli": "^7.1.0"
   },
   "dev-dependencies": {
-    "minimist": ">=1.2.2"
+    "minimist": ">=1.2.2",
+    "lodash": ">=4.17.19"
   }
 }
