@@ -1,9 +1,9 @@
-{{ partial "footer/tagcloud.html" . }}  
-{{ partialCached "footer/copyright.html" . }}
+{{ partial "footer/tagcloud.html" . }}
+{{ partialCached "footer/copyright.html" . $.Lang }}
 {{ partial "footer/debugging.html" . }}
-{{ partialCached "footer/finisher.html" . }}
-{{ with partialCached "footer/js.html" . }}
+{{ partialCached "footer/finisher.html" . $.Lang }}
+{{ with partialCached "footer/js.html" . $.Lang }}
 <script src="{{.RelPermalink}}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous" async defer type="text/javascript"></script>
 {{ end }}
-{{ partialCached "footer/google-analytics-delayed.html" . }}
-{{ partialCached "footer/adsense-delayed.html" . }}
+{{ partialCached "footer/google-analytics-delayed.html" . $.Lang }}
+{{ partialCached "footer/adsense-delayed.html" . $.Lang }}

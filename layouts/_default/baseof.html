@@ -16,15 +16,15 @@
         </div>
         {{ block "sidebar" . }}
           <div id="sidebar" class="col-lg-4 col-sm-12 col">
-            {{ partialCached "sidebar/widget-author.html" . }}
-            {{ partialCached "sidebar/widget-archive.html" . }}
+            {{ partialCached "sidebar/widget-author.html" . $.Lang }}
+            {{ partialCached "sidebar/widget-archive.html" . $.Lang }}
             {{ partial "sidebar/widget-recent.html" . }}
-            {{ partialCached "sidebar/widget-socialmedia.html" . }}
+            {{ partialCached "sidebar/widget-socialmedia.html" . $.Lang }}
           </div>
         {{ end }}
       </div>
     </main>
-    {{ partial "footer" . }}  
+    {{ partial "footer" . }}
   </body>
 </html>
 

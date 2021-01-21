@@ -5,7 +5,7 @@
 
   <h2>
     <span class="icon large" aria-hidden="true">
-      {{ partialCached "icons/user-friends.svg" . }}
+      {{ partialCached "icons/user-friends.svg" . $.Lang }}
     </span>&nbsp;
     <em>
       {{ $name := split .Page.Title " " }}
@@ -27,5 +27,5 @@
     {{ partial "content/meta-bottom.html" . }}
   </article>
   {{ end }}
-  
+
 {{ end }}
